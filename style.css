@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #1e1e2f, #2c3e50);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+nav a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+section {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+}
+
+.about, .projects, .contact {
+  max-width: 900px;
+  margin: auto;
+  animation: slideUp 1s ease-in-out;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+form button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ffcc00;
+}
+
+.form-msg {
+  margin-top: 1rem;
+  color: #00ffff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
