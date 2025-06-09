@@ -1,0 +1,71 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Learn | Learn Smarter</title>
+  <link rel="stylesheet" href="task2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">E-Learn</div>
+    <nav id="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Empower Your Learning</h1>
+      <p>Interactive lessons, expert instructors, and personalized paths to success.</p>
+      <button class="cta">Start Learning</button>
+    </div>
+  </section>
+
+  <section class="courses" id="courses">
+    <h2>Popular Courses</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <h3>Web Development</h3>
+        <p>Learn HTML, CSS, JS and build modern websites.</p>
+      </div>
+      <div class="course-card">
+        <h3>Data Science</h3>
+        <p>Analyze, visualize, and derive insights from data.</p>
+      </div>
+      <div class="course-card">
+        <h3>UI/UX Design</h3>
+        <p>Create engaging and intuitive digital experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>Why E-Learn?</h2>
+    <p>We believe in accessible education for all. Our platform combines quality content, modern tech, and learner-focused tools.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 E-Learn. All rights reserved.</p>
+  </footer>
+
+  <script src="task2.js"></script>
+</body>
+</html>
